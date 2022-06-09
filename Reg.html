@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    table {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgreen;
+
+    }
+
+    .div {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .div1 {
+        display: block;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td style="border: double; text-align: center; border-radius: 10px; ">
+                <font style="font-size: 50px; color: green; font-weight: lighter;">Learner Registration Form</font>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-top: 25px; padding-left: 45px; padding-right: 45px; padding-bottom: 25px;">
+                <form>
+                    <div class="div">
+                        <label for="name" class="div1">Name:</label>
+                        <input type="text" name="name" size="70" placeholder="Enter Full Name">
+                    </div>
+
+                    <div class="div">
+                        <label for="fname" class="div1">Father's Name:</label>
+                        <input type="text" name="fname" size="70">
+                    </div>
+
+                    <div class="div">
+                        <label for="mname" class="div1">Mother's Name:</label>
+                        <input type="text" name="mname" size="70">
+                    </div>
+
+                    <div class="div">
+                        <label for="ph" class="div1">MobilePhone Number:</label>
+                        <input type="tel" name="ph" size="70" Pattern="09[0-9]{9}" placeholder="09xxxxxxxxx">
+                    </div>
+
+                    <div class="div">
+                        <label for="email" class="div1">Email:</label>
+                        <input type="email" name="email" size="70" placeholder="sample@example.com" />
+                    </div>
+
+                    <div class="div">
+                        <div>
+                            <label for="gender">Gender:</label>
+                        </div>
+                        <input type="radio" name="rb" id="rb1">
+                        <label for="rb1">Male</label>
+                        <input type="radio" name="rb" id="rb2">
+                        <label for="rb2">Female</label>
+                        <input type="radio" name="rb" id="rb3">
+                        <label for="rb3">Other</label>
+                    </div>
+
+                    <div class="div">
+                        <label for="date" class="div1">Date of Birth:</label>
+                        <input type="date" name="date">
+                    </div>
+
+                    <div class="div">
+                        <label for="address" class="div1">Address</label>
+                        <input type="text" name="address" size="70"
+                            placeholder="House, Street, Township, State/Division">
+                    </div>
+
+                    <div class="div">
+                        <label for="bg" class="div1">Blood Group:</label>
+                        <select name="bg">
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="o">O</option>
+                            <option value="other"> Other </option>
+                        </select>
+                    </div>
+
+                    <div class="div">
+                        <div><label for="course">Course:</label></div>
+                        <div><input type="checkbox" name="cb1" id="cb1">
+                            <label for="cb1">Beginner</label>
+                        </div>
+                        <div><input type="checkbox" name="cb2" id="cb2">
+                            <label for="cb2">Intermediate</label>
+                        </div>
+                        <div><input type="checkbox" name="cb3" id="cb3">
+                            <label for="cb3">Advance</label>
+                        </div>
+                    </div>
+
+                    <div class="div">
+                        <label for="bio" class="div1">Bio Photo:</label>
+                        <input type="file" name="bio">
+                    </div>
+
+                    <div class="div">
+                        <label for="des" class="div1">Desired Classmates</label>
+                        <input type="number" id="des" name="des" min="5" max="20" step="5" value="10">
+                    </div>
+
+                    <div class="div">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
