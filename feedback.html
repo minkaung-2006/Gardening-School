@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<style>
+    table {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightgreen;
+    }
+
+    .div {
+        margin-bottom: 5px;
+    }
+    .m1 {
+        margin-right: 70px;
+    }
+
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td style="border: double; text-align: center;border-radius: 10px; background-color: white;">
+                <font style="font-size: 50px; color: green; font-weight: lighter;">Feedback Form</fo>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-top: 30px;">
+                <form>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="to" class="m1">To:</label>
+                            </td>
+                            <td>
+                                <input list="to">
+                                <datalist id="to">
+                                    <option value="Principal">
+                                    <option value="Manager">
+                                    <option value="Trainer">
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name" class="m1">Name:</label>
+                            </td>
+                            <td><input type="text" name="name" size="70" placeholder="Enter Full Name."></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email" class="m1">Email:</label>
+                            </td>
+                            <td><input type="email" name="email" size="70" placeholder="sample@example.com"></td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-bottom: 50px;">
+                                <label for="feedback" class="m1">Feedback:</label>
+                            </td>
+                            <td>
+                                <textarea name="feedback" rows="4" cols="60"
+                                    placeholder="Please type your comment."></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit" style="margin-left: 250px;">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
